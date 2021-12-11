@@ -68,6 +68,20 @@ body{
 .navbar-burger:before{
     top: 5px;
 }
+.navbar-burger.open-burger span {
+    opacity:0; 
+    transition: 0.5s; 
+}
+.navbar-burger.open-burger:before {
+    transform: rotate(38deg);
+    top: 16px;
+    transition: 0.4s;
+}
+.navbar-burger.open-burger:after {
+    transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s;
+}
 .navbar-contacts{
     text-align: right;
 }
