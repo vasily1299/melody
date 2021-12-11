@@ -65,6 +65,7 @@ body{
     margin: auto;
     padding-top: 54px;
     display: flex;
+    padding-bottom: 54px;
 }
 .home-image path{
     opacity: 0;
