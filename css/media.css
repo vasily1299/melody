@@ -4,8 +4,8 @@
     padding-right: 2%;
     flex-direction: column;
   }
-  .logo, .navbar-nav{
-    margin-bottom: 30px;
+ .logo, .navbar-nav, .navbar-contacts{
+    margin-top: 30px;
   }
   .navbar-contacts{
     text-align: center;
