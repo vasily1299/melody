@@ -118,6 +118,7 @@ body{
     cursor: pointer;
 }
 .footer{
+    border-top: 4px solid #3596F5;
     padding-top: 50px;
     padding-bottom: 56px;
     background-color: #D7D7D7;
