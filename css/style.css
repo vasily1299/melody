@@ -43,6 +43,31 @@ body{
     text-decoration: none;
     color: #fff;
 }
+.navbar-burger{
+    position: relative;
+    width: 40px;
+    height: 35px;
+    display: none;
+}
+.navbar-burger span, .navbar-burger:after, .navbar-burger:before{
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background-color:#fff;
+    padding: 0 auto;
+}
+.navbar-burger span{
+    top:16px;
+}
+.navbar-burger:after, .navbar-burger:before{
+    content: "";
+}
+.navbar-burger:after{
+    bottom: 5px;
+}
+.navbar-burger:before{
+    top: 5px;
+}
 .navbar-contacts{
     text-align: right;
 }
