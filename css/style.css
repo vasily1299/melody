@@ -64,8 +64,8 @@ body{
     max-width: 1280px;
     margin: auto;
     padding-top: 54px;
-    display: flex;
     padding-bottom: 54px;
+    display: flex;
 }
 .home-image path{
     opacity: 0;
@@ -116,4 +116,65 @@ body{
     border: none;
     padding: 16px 36px;
     cursor: pointer;
+}
+.footer{
+    padding-top: 50px;
+    padding-bottom: 56px;
+    background-color: #D7D7D7;
+}
+.footer-info{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo-footer{
+    margin-right: 37px;
+}
+.footer-contacts{
+    text-align: left;
+    margin-right: 59px;
+}
+.footer-text{
+    display: block;
+    color:#635854;
+;
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.footer-phone{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #635854;
+}
+.footer-icons{
+    display: flex;
+}
+.footer-icons-item{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.footer-nav{
+    flex-grow: 1;    
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.footer-menu{
+    display: flex;
+}
+.footer-item{
+    list-style: none;
+}
+.footer-link{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 20px;
+    color: #635854;
 }
