@@ -149,7 +149,8 @@ path.current-floor{
     font-family: "Bebas Neue", sans-serif;
     color: #635854;
     font-size: 124px;
-    line-height: 1.6em;
+    /* line-height: 1.6em; */
+    padding: 35px;
     font-weight: 500;
 }
 .button-primary{
