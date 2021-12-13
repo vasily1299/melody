@@ -40,8 +40,8 @@
     padding-top: 5px;
     padding-bottom: 10px;
   }
-  .modal-dialog{
-    flex-direction:column;
+  .modal,.modal-dialog{
+    flex-direction: column;
   }
   .modal-image{
     width: 100%;
@@ -111,6 +111,11 @@
   }
   .footer-item{
     margin-bottom: 10px;
+  }
+  .modal-close-button{
+    position: relative;
+    right: 0;
+    top: 22px;
   }
 }
 
