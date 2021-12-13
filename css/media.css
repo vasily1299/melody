@@ -79,7 +79,7 @@
     height: 100%;
   } */
   .main{
-    background-image: url('../img/home.png');
+    background: #635854 url('../img/home.png') no-repeat fixed center center;
   }
   .main-image{
     display: none;
