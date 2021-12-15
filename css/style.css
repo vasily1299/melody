@@ -223,7 +223,7 @@ path.current-floor{
     margin-left: 20px;
     color: #635854;
 }
-.modal{
+.modal, .modal-feedback{
     position: fixed;    /* фиксированная позиция поверх всего сайта */
     left: 0;    /* приклеиваем к левому краю */
     top: 0; /* приклеиваем к верху */
@@ -253,9 +253,44 @@ path.current-floor{
     transition: transform 0.2s, opacity 0.2s;
     transition-delay: 0.2s;
 }
-.is-open > .modal-dialog{
+.modal-form{
+    position: relative;
+    max-width: 500px;
+    min-height: 365px;
+    background-color: #fff;
+    flex-grow: 1;
+    display: flex;
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: transform 0.2s, opacity 0.2s;
+    transition-delay: 0.2s;
+}
+.is-open > .modal-dialog, .is-open > .modal-form{
     opacity: 1;
     transform: translateY(0);
+}
+.modal-feed-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 50px;
+}
+.modal-form-title{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.modal-feed-form button{
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.modal-feed-form input{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 .modal-image{
     background-color: #EBEBEB;
@@ -312,8 +347,9 @@ path.current-floor{
     line-height: 19px;
     margin-top: 56px;
     color: #635854;
+    display: none;
 }
-.modal-close-button{
+.modal-close-button,.modal-feedback-close-button{
     position: absolute;
     right: 27px;
     top: 38px;

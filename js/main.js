@@ -4,8 +4,11 @@ $(document).ready(function () {
   var counterUp = $(".counter-up"); /* кнопка увеличения этажа */
   var counterDown = $(".counter-down"); /* кнопка уменьшения этажа */
   var modal = $(".modal");
+  var modalFeedback = $('.modal-feedback');
   var modalCloseButton = $(".modal-close-button");
+  var modalFeedbackCloseButton = $(".modal-feedback-close-button");
   var viewFlatsButton = $(".view-flats");
+  var order =$(".order");
   var flatPath = $(".flats path"); // каждая квартира на этаже в SVG
   var currentFlat = 41; // переменная, где хранится текущая квартира
   var currentLink = $(".flat-link");
@@ -37,8 +40,11 @@ $(document).ready(function () {
   });
 
 
-
-  
+// при клике на квартиру
+  flatPath.on("click", toggleModalFeedback); // при клике на квартиру вызываем модальное окно с формой
+  flatLink.on("click", toggleModalFeedback); // при клике на ссылку на квартиру вызываем модальное окно с формой
+  modalFeedbackCloseButton.on("click", toggleModalFeedback); // при клике на крестик закрываем модальное окно
+  order.on("click", toggleModalFeedback); // при клике на оформить заявку скрываем модальное окно с формой
 
   // функция при наведении мышкой на этаж
   floorPath.on("mouseover", function () {
@@ -84,6 +90,11 @@ $(document).ready(function () {
   // функция открыть-закрыть модальное окно
   function toggleModal() {
     modal.toggleClass("is-open");
+  }
+
+  // функция открыть-закрыть модальное окно с формой
+  function toggleModalFeedback() {
+    modalFeedback.toggleClass("is-open");
   }
 });
 
